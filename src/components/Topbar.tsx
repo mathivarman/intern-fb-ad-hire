@@ -52,7 +52,7 @@ export default function Topbar({ onMenuClick = () => {} }: TopbarProps) {
 
       <div className="flex items-center gap-3">
         <Link
-          href="/"
+          href="/enroll"
           target="_blank"
           className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-lg bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 hover:bg-indigo-500/20 transition-colors"
         >

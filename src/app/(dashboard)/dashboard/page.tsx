@@ -610,7 +610,7 @@ export default function DashboardPage() {
       </Card>
 
       {/* Main Students Data Table */}
-      <Card className="border-border shadow-xs overflow-hidden">
+      <Card className="border-border shadow-xs">
         {/* Mobile Swipe Hint */}
         <div className="md:hidden px-3.5 py-2 bg-indigo-500/10 border-b border-border flex items-center justify-between text-xs text-indigo-400 font-medium">
           <span className="flex items-center gap-1.5">

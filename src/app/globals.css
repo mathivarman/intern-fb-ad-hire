@@ -151,10 +151,11 @@
   scrollbar-color: rgba(99, 102, 241, 0.4) rgba(255, 255, 255, 0.05);
 }
 
-/* Left-side scrollbar: flip writing direction on wrapper, restore on content */
+/* Left-side scrollbar: rtl on wrapper pushes bar to the left,
+   then reset ltr on every descendant so text/layout stays normal */
 .scrollbar-left {
   direction: rtl;
 }
-.scrollbar-left > * {
+.scrollbar-left * {
   direction: ltr;
 }

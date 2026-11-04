@@ -621,8 +621,8 @@ export default function DashboardPage() {
           </span>
         </div>
 
-        <div className="overflow-x-auto overflow-y-auto touch-pan-x w-full custom-scrollbar max-h-[calc(100vh-280px)]">
-          <table className="w-full min-w-[880px] text-left border-collapse">
+        <div className="overflow-x-auto overflow-y-auto touch-pan-x w-full custom-scrollbar max-h-[calc(100vh-280px)] md:[direction:ltr] [direction:rtl]">
+          <table className="w-full min-w-[880px] text-left border-collapse [direction:ltr]">
             <thead>
               <tr className="border-b border-border text-[11px] font-semibold text-muted-foreground uppercase tracking-wider sticky top-0 z-10">
                 <th className="py-3 px-4 min-w-[200px] bg-muted/90 backdrop-blur-sm">Student Name</th>

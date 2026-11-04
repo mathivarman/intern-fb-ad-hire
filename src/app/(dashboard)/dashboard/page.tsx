@@ -621,17 +621,17 @@ export default function DashboardPage() {
           </span>
         </div>
 
-        <div className="overflow-x-auto touch-pan-x w-full custom-scrollbar">
+        <div className="overflow-x-auto overflow-y-auto touch-pan-x w-full custom-scrollbar max-h-[calc(100vh-280px)]">
           <table className="w-full min-w-[880px] text-left border-collapse">
             <thead>
-              <tr className="border-b border-border bg-muted/40 text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">
-                <th className="py-3 px-4 min-w-[200px]">Student Name</th>
-                <th className="py-3 px-4 min-w-[150px]">TP Number (Contact)</th>
-                <th className="py-3 px-4 min-w-[140px]">Status</th>
-                <th className="py-3 px-4 min-w-[130px]">Follower</th>
-                <th className="py-3 px-4 min-w-[200px]">Course Name</th>
-                <th className="py-3 px-4 min-w-[150px]">Submitted Date</th>
-                <th className="py-3 px-4 min-w-[90px] text-right">Actions</th>
+              <tr className="border-b border-border text-[11px] font-semibold text-muted-foreground uppercase tracking-wider sticky top-0 z-10">
+                <th className="py-3 px-4 min-w-[200px] bg-muted/90 backdrop-blur-sm">Student Name</th>
+                <th className="py-3 px-4 min-w-[150px] bg-muted/90 backdrop-blur-sm">TP Number (Contact)</th>
+                <th className="py-3 px-4 min-w-[140px] bg-muted/90 backdrop-blur-sm">Status</th>
+                <th className="py-3 px-4 min-w-[130px] bg-muted/90 backdrop-blur-sm">Follower</th>
+                <th className="py-3 px-4 min-w-[200px] bg-muted/90 backdrop-blur-sm">Course Name</th>
+                <th className="py-3 px-4 min-w-[150px] bg-muted/90 backdrop-blur-sm">Submitted Date</th>
+                <th className="py-3 px-4 min-w-[90px] text-right bg-muted/90 backdrop-blur-sm">Actions</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border text-sm">

@@ -94,6 +94,12 @@ const STATUS_CONFIG: Record<
     bg: "bg-purple-500/10",
     border: "border-purple-500/30",
   },
+  Confirmed: {
+    label: "Confirmed",
+    color: "text-emerald-400",
+    bg: "bg-emerald-500/10",
+    border: "border-emerald-500/30",
+  },
 };
 
 export default function DashboardPage() {
@@ -144,6 +150,7 @@ export default function DashboardPage() {
     Contacted: 0,
     "No Answer": 0,
     "Follow Up": 0,
+    Confirmed: 0,
   };
 
   // Followers are strictly Mathi and Sinthu (plus None for unassigned)
@@ -508,6 +515,19 @@ export default function DashboardPage() {
             </div>
             <p className="text-2xl font-bold text-purple-400 mt-2">{stats["Follow Up"] ?? 0}</p>
             <p className="text-[11px] text-muted-foreground mt-1">Scheduled call</p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-card border-border shadow-xs hover:border-emerald-500/30 transition-colors">
+          <CardContent className="p-4">
+            <div className="flex items-center justify-between">
+              <p className="text-xs font-medium text-emerald-400 uppercase tracking-wider">
+                Confirmed
+              </p>
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+            </div>
+            <p className="text-2xl font-bold text-emerald-400 mt-2">{stats.Confirmed ?? 0}</p>
+            <p className="text-[11px] text-muted-foreground mt-1">Enrolled & confirmed</p>
           </CardContent>
         </Card>
       </div>

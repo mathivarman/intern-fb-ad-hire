@@ -53,6 +53,7 @@ export async function GET(req: NextRequest) {
       Contacted: 0,
       "No Answer": 0,
       "Follow Up": 0,
+      Confirmed: 0,
     };
 
     allStudents.forEach((s) => {

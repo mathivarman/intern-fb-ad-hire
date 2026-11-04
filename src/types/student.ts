@@ -2,16 +2,18 @@ export type StudentStatus =
   | "New"
   | "Contacted"
   | "No Answer"
-  | "Follow Up";
+  | "Follow Up"
+  | "Confirmed";
 
 export const STUDENT_STATUSES: StudentStatus[] = [
   "New",
   "Contacted",
   "No Answer",
   "Follow Up",
+  "Confirmed",
 ];
 
-export const DEFAULT_FOLLOWERS = ["None", "Mathi", "Sinthu"];
+export const DEFAULT_FOLLOWERS = ["None", "Mathi", "Sinthu", "Sanofer"];
 
 export const POPULAR_COURSES = [
   "Full Stack Web Development",

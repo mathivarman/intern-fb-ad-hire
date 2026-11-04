@@ -145,10 +145,12 @@
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(99, 102, 241, 0.7);
 }
-/* Force scrollbar always visible on mobile (not just on hover) */
+/* Force scrollbar always visible + smooth touch scroll on iOS */
 .custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: rgba(99, 102, 241, 0.4) rgba(255, 255, 255, 0.05);
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
 }
 
 /* Left-side scrollbar: rtl on wrapper pushes bar to the left,

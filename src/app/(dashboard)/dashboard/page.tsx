@@ -621,7 +621,7 @@ export default function DashboardPage() {
           </span>
         </div>
 
-        <div className="overflow-x-auto overflow-y-auto touch-pan-x w-full custom-scrollbar scrollbar-left max-h-[calc(100vh-280px)]">
+        <div className="overflow-x-auto overflow-y-auto w-full custom-scrollbar scrollbar-left max-h-[calc(100vh-280px)] [touch-action:pan-x_pan-y] [-webkit-overflow-scrolling:touch]">
           <table className="w-full min-w-[880px] text-left border-collapse">
             <thead>
               <tr className="border-b border-border text-[11px] font-semibold text-muted-foreground uppercase tracking-wider sticky top-0 z-10">

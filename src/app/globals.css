@@ -129,9 +129,10 @@
   }
 }
 
-/* Touch-friendly horizontal scrollbar for mobile view */
+/* Touch-friendly scrollbar for mobile and desktop */
 .custom-scrollbar::-webkit-scrollbar {
-  height: 6px;
+  height: 6px; /* horizontal */
+  width: 6px;  /* vertical */
 }
 .custom-scrollbar::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.05);
@@ -143,4 +144,17 @@
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(99, 102, 241, 0.7);
+}
+/* Force scrollbar always visible on mobile (not just on hover) */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(99, 102, 241, 0.4) rgba(255, 255, 255, 0.05);
+}
+
+/* Left-side scrollbar: flip writing direction on wrapper, restore on content */
+.scrollbar-left {
+  direction: rtl;
+}
+.scrollbar-left > * {
+  direction: ltr;
 }

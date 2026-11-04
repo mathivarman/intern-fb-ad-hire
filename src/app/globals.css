@@ -131,8 +131,15 @@
 
 /* Touch-friendly scrollbar for mobile and desktop */
 .custom-scrollbar::-webkit-scrollbar {
-  height: 6px; /* horizontal */
-  width: 6px;  /* vertical */
+  height: 6px; /* horizontal - desktop */
+  width: 6px;  /* vertical - desktop */
+}
+
+@media (max-width: 768px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 10px; /* horizontal - mobile */
+    width: 10px;  /* vertical - mobile */
+  }
 }
 .custom-scrollbar::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.05);
@@ -151,6 +158,12 @@
   scrollbar-color: rgba(99, 102, 241, 0.4) rgba(255, 255, 255, 0.05);
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x pan-y;
+}
+
+@media (max-width: 768px) {
+  .custom-scrollbar {
+    scrollbar-width: auto; /* thicker on mobile Firefox */
+  }
 }
 
 /* Left-side scrollbar: rtl on wrapper pushes bar to the left,
